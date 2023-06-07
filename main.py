@@ -19,7 +19,7 @@ def read_csv_into_vector_doc(file, text_cols):
         return [Document(page_content=text) for text in text_data]
 
 
-openai.api_key = os.environ["OPENAI_API_KEY"]
+openai.api_key = os.environ["your_openai_key"]
 
 if not openai.api_key:
     print('OpenAI API key not found in environment variables.')
